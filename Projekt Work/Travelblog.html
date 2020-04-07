@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.min.css">
+    <link rel="stylesheet" href="travelblog.css">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</head>
+<body>
+
+        <nav id ="navbar" class=" w-full bg-teal-800">
+            <ul class="flex">
+                <div id="title" class="justify-start w-1/4 m-5">
+                <li class="text-white  text-xl font-medium font-mono"><a href=""></a>Travelblog Ruanda</li>
+                </div>
+                <div id ="links" class ="flex justify-end w-3/4 my-4 text-white">
+                <li class= "px-5 py-2" ><a class ="hover:text-teal-200" href="">Contact</a></li>
+                <li class= "px-5 py-2"><a class ="hover:text-teal-200"  href="">Log In</a></li>
+                <li class="px-5 py-2"><a class ="hover:text-teal-200" href="">Admin</a></li>
+                <li class="px-5 py-2"><a class ="hover:text-teal-200"href="">Carlotta Friedmann</a></li>
+                <li class= "px-5"><img class = "w-10 h-10 rounded-full" src="/Users/carlotta/Desktop/Projekte/Javascript Course/javascript-for-web-2020-03/micro-blog/img/Monster test.png"></img></li>
+                 </div>
+              </ul>
+              </nav>
+        
+            <div id ="map">
+
+            </div>
+
+           
+        
+<!-- 
+    <script src= "Informationwindow.js"></script> -->
+    <script src="Travelblog.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpodsEkNPK4mclJvMBnMrwOajRKB3g6yo&callback=initMap"></script>
+   
+</body>
+</html>
