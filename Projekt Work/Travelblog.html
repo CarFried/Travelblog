@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="tailwind.min.css">
+  <link rel="html" href="Travelblog_Limited_View.html">
   <link rel="stylesheet" href="travelblog.css">
+
   <style>
     /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -21,24 +23,45 @@
       margin: 0;
       padding: 0;
     }
+
+    .gm-style .gm-style-iw {
+    background-color: #285e61!important;
+    
+ }
+
+ .gm-style .gm-style-iw-d {
+  background-color: #285e61!important;
+ }
+
+ .gm-style .gm-style-iw-d::-webkit-scrollbar-track, .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece{
+  background-color: #285e61!important;
+ }
+
+ .gm-style .gm-style-iw-t::after{
+  background-color: #285e61!important;
+  background: linear-gradient(45deg,#285e61 50%,#285e61 51%,#285e61 100%)!important;
+
+ }
+
+
   </style>
 </head>
 
 <body>
 
-  <nav id="navbar" class=" w-full bg-teal-800">
+  <nav id="navbar" class=" w-full bg-black">
     <ul class="flex">
-      <div id="title" class="justify-start w-1/4 m-5">
+      <div id="title" class="justify-start w-1/3 m-5">
         <li class="text-white  text-xl font-medium font-mono"><a href=""></a>Travelblog Ruanda</li>
       </div>
-      <div id="links" class="flex justify-end w-3/4 my-4 text-white">
+      <div id="links" class="flex justify-end w-2/3 my-4 text-white">
         <li class="px-5 py-2"><a class="hover:text-teal-200" href="">Contact</a></li>
-        <li class="px-5 py-2"><a class="hover:text-teal-200" href="">Log In</a></li>
-        <li class="px-5 py-2"><a class="hover:text-teal-200" href="">Admin</a></li>
-        <li class="px-5 py-2"><a class="hover:text-teal-200" href="">Carlotta Friedmann</a></li>
-        <li class="px-5"><img class="w-10 h-10 rounded-full"
+        <li class="px-5 py-2"><a class="hover:text-teal-200" href="/Users/carlotta/Desktop/Travelblog/Travelblog/Projekt Work/admin/admin.html">Admin</a></li>
+        <li class="px-5 py-2"><a class="" href="">Carlotta Friedmann</a></li>
+        <li class="px-5"><img class="w-10 h-10 rounded-full mr-2"
             src="/Users/carlotta/Desktop/Projekte/Javascript Course/javascript-for-web-2020-03/micro-blog/img/Monster test.png"></img>
         </li>
+        <button id="logOut" class="bg-teal-700 hover:bg-teal-100  hover:text-black text-white font-medium px-3 py-1 mr-5 rounded-full border-solid border-2 border-teal-900">Log out</button>
       </div>
     </ul>
   </nav>
@@ -52,17 +75,16 @@
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
 
-
+  <script src="Travelbloglimited.js"></script>
   <script src="Travelblog1.js"></script>
+ 
+  
 
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpodsEkNPK4mclJvMBnMrwOajRKB3g6yo&callback=initMap"></script>
 
-
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 
 
 </body>
