@@ -117,7 +117,7 @@ const logout = (e) => {
     // An error happened.
   });
   e.preventDefault();
-  window.location.href = "Travelblog_Limited_view.html";
+  window.location.href = "index.html";
 
 }
 

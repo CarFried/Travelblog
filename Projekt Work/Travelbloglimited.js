@@ -1,11 +1,11 @@
 var firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 }
 
 firebase.initializeApp(firebaseConfig);
@@ -40,7 +40,7 @@ const login = (e) =>{
 firebase.auth().signInWithEmailAndPassword(email, passwort) 
 .then (() => {
    console.log("Success!");
-   window.location.href="Travelblog.html"
+   window.location.href="index_full.html"
 })
 .catch((error) => {
 
