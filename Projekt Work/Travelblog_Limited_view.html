@@ -6,34 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="tailwind.min.css">
-  <link rel="stylesheet" href="travelblog.css">
   <style>
     /* Always set the map height explicitly to define the size of the div
        /* * element that contains the map. */
-      
-       #map {
+
+    #map {
       height: 100%;
     }
 
 
     /* Optional: Makes the sample page fill the window. */
-     html,
+    html,
     body {
       height: 100%;
       margin: 0;
       padding: 0;
-    } 
+    }
 
     #loginform {
-    position: absolute;
-    margin: 0; 
-    left:40%;
-    top: 40%; 
-    transform: translate(-40, -40);
-    display:none; 
+      position: absolute;
+      margin: 0;
+      left: 40%;
+      top: 40%;
+      transform: translate(-40, -40);
+      display: none;
 
-}
+    }
 
+    .gm-style .gm-style-iw {
+      background-color: #285e61 !important;
+
+    }
+
+    .gm-style .gm-style-iw-d {
+      background-color: #285e61 !important;
+    }
+
+    .gm-style .gm-style-iw-d::-webkit-scrollbar-track,
+    .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+      background-color: #285e61 !important;
+    }
+
+    .gm-style .gm-style-iw-t::after {
+      background-color: #285e61 !important;
+      background: linear-gradient(45deg, #285e61 50%, #285e61 51%, #285e61 100%) !important;
+
+    }
   </style>
 </head>
 
@@ -45,12 +63,13 @@
         <li class="text-white  text-xl font-medium font-mono"><a href=""></a>Travelblog Ruanda</li>
       </div>
       <div id="links" class="flex justify-end w-3/4 my-4 text-white">
-        <li class="px-5 py-2"><a class="hover:text-teal-200" href="">Contact</a></li>
-        <li id ="logIn" class="px-5 py-2"><a class="hover:text-teal-200"   href="">Log In</a></li>
-        <li class="px-5 py-2"><a class="hidden hover:text-teal-200 hidden" href="/Users/carlotta/Desktop/Travelblog/Travelblog/Projekt Work/admin/admin.html">Admin</a></li>
-        <li class="px-5 py-2"><a class="hidden hover:text-teal-200"  href="">Carlotta Friedmann</a></li>
+        <li class="px-5 py-2"><a class="hover:text-teal-200" href="Contact/Contact.html">Contact</a></li>
+        <li id="logIn" class="px-5 py-2"><a class="hover:text-teal-200" href="">Log In</a></li>
+        <li class="px-5 py-2"><a class="hidden hover:text-teal-200 hidden"
+            href="admin/admin.html">Admin</a></li>
+        <li class="px-5 py-2"><a class="hidden hover:text-teal-200" href="">Carlotta Friedmann</a></li>
         <li class="px-5"><img class=" hidden w-10 h-10 rounded-full"
-            src="/Users/carlotta/Desktop/Projekte/Javascript Course/javascript-for-web-2020-03/micro-blog/img/Monster test.png"></img>
+            src="img/Monster test.png"></img>
         </li>
       </div>
     </ul>
@@ -61,33 +80,39 @@
 
   </div>
 
- <!-- Log In Form  -->
+  <!-- Log In Form  -->
 
- <div id="loginform" class="w-full max-w-xs">
-  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-        Username
-      </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
-    </div>
-    <div class="mb-6">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-        Password
-      </label>
-      <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
-      <p id="errorMessage"class="text-red-500 text-xs italic">Please type in password.</p>
-    </div>
-    <div class="flex items-center justify-between">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-        Log In
-      </button>
-    </div>
-  </form>
-  <p class="text-center text-gray-500 text-xs">
-    &copy;2020 Carlotta Friedmann All rights reserved.
-  </p>
-</div>
+  <div id="loginform" class="w-full max-w-xs">
+    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+          Username
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="username" type="text" placeholder="Username">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+          Password
+        </label>
+        <input
+          class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+          id="password" type="password" placeholder="******************">
+        <p id="errorMessage" class="text-red-500 text-xs italic">Please type in password.</p>
+      </div>
+      <div class="flex items-center justify-between">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="submit">
+          Log In
+        </button>
+      </div>
+    </form>
+    <p class="text-center text-gray-500 text-xs">
+      &copy;2020 Carlotta Friedmann All rights reserved.
+    </p>
+  </div>
 
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -97,12 +122,13 @@
 
 
 
- 
+
   <script src="Travelbloglimited.js"></script>
   <script src="Travelblog1.js"></script>
- 
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpodsEkNPK4mclJvMBnMrwOajRKB3g6yo&callback=initMap"></script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpodsEkNPK4mclJvMBnMrwOajRKB3g6yo&callback=initMap"></script>
 
 
 

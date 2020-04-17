@@ -10,29 +10,27 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-const dblimited = firebase.firestore();
 
-//logIn Form holen
+//logIn Form from DOM
 
 const logInFenster = document.getElementById("loginform");
 const logIn = document.getElementById("logIn");
 
 
-//eventlistener auf Login setzen und Funktion zum Öffnen aufrufen
+//eventlistener on Login to call function for opening the infowindows 
 
 logIn.addEventListener(`click`, openLogIn) 
 
-//Funktion um Infowindow zu öffnen
+//Function for opening infowindows
 
 function openLogIn(e) {
   e.preventDefault();
   logInFenster.style.display = "block";
 }
 
-//logIn Daten zum Firestore senden & error message displayen 
 
 
-
+//send logIn Daten to Firestore  & show error message 
 
 const login = (e) =>{
   e.preventDefault();
@@ -53,7 +51,7 @@ message.innerHTML = "username and password do not match!"
 
 }
 
-//eventlistener auf Submission senden
+//eventlistener on Submission 
 
 logInFenster.addEventListener("submit",login)
 
